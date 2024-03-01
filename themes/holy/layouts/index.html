@@ -2,11 +2,14 @@
 <div class="d:flex flex:col">
     {{- partial "prose.html" . -}}
 
-    <h2 class="my:1em">Posts</h2>
-
     {{- range where site.RegularPages "Type" "in" site.Params.mainSections -}}
 
-    {{- partial "li.html" ( dict "url" .Permalink "title" .Title "subTitle" (.Date | time.Format (":date_medium")) ) -}}
+    {{- partial "li.html" ( dict 
+        "url" .Permalink 
+        "title" .Title 
+        "publishDate" (.Date | time.Format (":date_medium")) 
+        "summary" .Summary
+        ) -}}
     {{- end -}}
 </div>
 {{ end }}

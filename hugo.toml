@@ -1,4 +1,36 @@
-baseURL = 'https://example.org/'
+baseURL = 'debaetsd.github.io'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = "Dieter's Blog"
 theme = 'holy'
+disableKinds = ['taxonomy', 'term']
+author = "Dieter De Baets"
+
+[params.author]
+name = 'Dieter De Baets'
+
+[params]
+copyright = '©Dieter De Baets' 
+description = "Graphcis programming ramblings of Dieter De Baets"
+
+
+[menu]
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 10
+
+
+[privacy]
+[privacy.disqus]
+    disable = true
+[privacy.googleAnalytics]
+    disable = true
+[privacy.instagram]
+    disable = true
+[privacy.twitter]
+    disable = true
+[privacy.vimeo]
+    disable = true
+[privacy.youtube]
+    disable = true
