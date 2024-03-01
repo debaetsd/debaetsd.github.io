@@ -27,8 +27,8 @@
         }
     </style>
 
-    <link rel="alternate" type="application/rss+xml" href="{{.Site.BaseURL }}/index.xml" title="{{ .Site.Title }}">
-
+    <link href="/index.xml" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}">
+    <link href="/index.xml" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}">
     
     {{- partial "head-extra.html" . -}}
 </head>
