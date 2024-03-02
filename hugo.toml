@@ -1,5 +1,6 @@
 baseURL = 'debaetsd.github.io'
 languageCode = 'en-us'
+DefaultContentLanguage = "en" 
 title = "Dieter's Blog"
 theme = 'holy'
 disableKinds = ['taxonomy', 'term']
@@ -34,3 +35,5 @@ weight = 10
 [privacy.youtube]
     disable = true
 
+[languages.en.params]
+  date_format = "02 Jan 2006"
