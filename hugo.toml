@@ -37,3 +37,6 @@ weight = 10
 
 [languages.en.params]
   date_format = "02 Jan 2006"
+
+[markup.highlight]
+style  = 'github-dark'

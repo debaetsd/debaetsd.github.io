@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <style>
+        #timer {
+            font-size: 36px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>All Aboard the failboat !!!</div>
+    <div id="timer">10</div>
+    <script>
+        let timeLeft = 10;
+        function updateTimer() {
+            document.getElementById('timer').innerText = timeLeft;
+        }
+        function countdown() {
+            if (timeLeft > 0) {
+                timeLeft--;
+                updateTimer();
+            } else {
+                clearInterval(timerInterval);
+                window.location.href = 'https://example.com';
+            }
+        }
+        updateTimer();
+        const timerInterval = setInterval(countdown, 1000);
+    </script>
+</body>
+</html>
