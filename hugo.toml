@@ -5,13 +5,14 @@ title = "Dieter's Blog"
 theme = 'holy'
 disableKinds = ['taxonomy', 'term']
 author = "Dieter De Baets"
+enableEmoji = true
 
 [params.author]
 name = 'Dieter De Baets'
 
 [params]
 copyright = '©Dieter De Baets' 
-description = "Graphcis programming ramblings by Dieter De Baets"
+description = "Graphics programming ramblings by Dieter De Baets"
 
 [menu]
 [[menu.main]]

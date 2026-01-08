@@ -1,0 +1,128 @@
+.custom-figure {
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+}
+
+.custom-figure img {
+  width: 70%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.custom-figure figcaption {
+  font-size: 0.7em;
+  margin-top: 2px;
+}
+
+
+
+/* Instant Lightbox CSS - Add to your theme's CSS file or in a <style> tag */
+
+.instant-lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  overflow: hidden;
+}
+
+.instant-lightbox.active {
+  display: block;
+}
+
+.instant-lightbox-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.instant-lightbox-image {
+  max-width: calc(100% - 160px);
+  max-height: calc(100vh - 100px);
+  object-fit: contain;
+  display: none;
+}
+
+.instant-lightbox-image.active {
+  display: block;
+}
+
+.instant-lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10000;
+  background: none;
+  border: none;
+  padding: 0;
+  line-height: 1;
+}
+
+.instant-lightbox-close:hover {
+  color: #ccc;
+}
+
+.instant-lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 20px;
+  user-select: none;
+  z-index: 10000;
+  background: none;
+  border: none;
+}
+
+.instant-lightbox-nav:hover {
+  color: #ccc;
+}
+
+.instant-lightbox-prev {
+  left: 20px;
+}
+
+.instant-lightbox-next {
+  right: 20px;
+}
+
+.instant-lightbox-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  text-align: center;
+  max-width: 80%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.instant-lightbox-counter {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #fff;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 8px 15px;
+  border-radius: 4px;
+}

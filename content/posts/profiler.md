@@ -5,7 +5,7 @@ draft = false
 Summary = 'Notes on Implementing a Range-Based CPU/GPU Profiler'
 +++
 
-![targets](/profiler.png)
+{{< figure src="/profiler.png" width="100%" >}}
 
 ## Introduction
 

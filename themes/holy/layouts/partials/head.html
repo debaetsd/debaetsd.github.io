@@ -15,6 +15,13 @@
     {{ end }}
 
     <link href="https://unpkg.com/@master/normal.css" rel="stylesheet">
+    
+    {{ $style := resources.Get "css/style.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
+<link rel="stylesheet" href="/css/instant-lightbox.css">
+
+
     <script src="https://unpkg.com/@master/style@1.5.0"></script>
     <script src="https://unpkg.com/@master/styles@1.13.0"></script>
     <script src="https://unpkg.com/master-styles-group"></script>
@@ -35,3 +42,4 @@
     {{- partial "head-extra.html" . -}}
 </head>
 <script data-goatcounter="https://debaetsd.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+

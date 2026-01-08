@@ -1,0 +1,17 @@
+<figure style="
+  display: {{ if .Get "inline" }}inline-block{{ else }}block{{ end }};
+  width: {{ .Get "width" | default "70%" }};
+  text-align: center;
+  margin: 1em{{ if not (.Get "inline") }} auto{{ end }};
+  vertical-align: top;
+">
+  <a href="{{ .Get "src" }}"
+     data-instant-gallery="{{ .Get "gallery" | default "image-gallery" }}"
+     data-caption="{{ .Get "caption" }}">
+    <img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}"
+         style="width: 100%; height: auto; display: block; margin: 0 auto;">
+  </a>
+  <figcaption style="font-size: 0.85em; margin-top: 4px;">
+    {{ .Get "caption" }}
+  </figcaption>
+</figure>
