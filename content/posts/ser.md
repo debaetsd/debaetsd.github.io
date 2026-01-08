@@ -1,7 +1,7 @@
 +++
 title = '(Ab)using Shader Execution Reordering'
 date = 2026-01-07T14:27:41+01:00
-draft = true
+draft = false
 Summary = 'Notes on Shader execution Reordering'
 +++
 
