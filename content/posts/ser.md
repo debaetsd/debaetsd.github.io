@@ -2,7 +2,7 @@
 title = '(Ab)using Shader Execution Reordering'
 date = 2026-01-07T14:27:41+01:00
 draft = false
-Summary = 'Notes on Shader execution Reordering'
+Summary = 'Notes on creative usage of shader execution reordering'
 +++
 
 {{< figure src="/ser.png" width="100%" >}}
